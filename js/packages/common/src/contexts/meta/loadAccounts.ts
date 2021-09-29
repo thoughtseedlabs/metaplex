@@ -398,7 +398,7 @@ const pullMetadataByCreators = (
     }
   };
   const forEachAccount = processingAccounts(setter);
-
+  console.log('Whitelisted creators', whitelistedCreators);
   const additionalPromises: Promise<void>[] = [];
   for (const creator of whitelistedCreators) {
     for (let i = 0; i < MAX_CREATOR_LIMIT; i++) {
